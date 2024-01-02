@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registeration User</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body style="color:var(--link-text-color)">
+    
+    <a class="btn" href="home.html">🏡</a>
+    <h1><u>Welcome, our valuable students</u></h1>
+    <fieldset>
+        <legend>User Registration form</legend>
+        <center>
+            <form action="addUser.php" method="POST">
+        <table border="0" cellspacing="0" height="290" width="500">
+            <tr>
+                <td>First Name: </td>
+                <td><input name="fname" id="fname"  type="text" placeholder="  First Name"></td>
+            </tr>
+            <tr>
+                <td>Last Name: </td>
+                <td><input name="lname" id="lname"  type="text" placeholder="  Last Name"></td>
+            </tr>
+            <tr>
+                <td>Gender: </td>
+                <td>
+                    <input name="gender" value="m" id="gender" type="radio"  id="gender" > <label for="name">Male</label>
+                    <input name="gender" value="f" id="gender" type="radio"  value="female" id="gender"><label for="name">Female</label>
+                    <input name="gender" value="n" id="gender" type="radio"  value="female" id="gender"><label for="name">Neuter</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Date of Birth: </td>
+                <td>
+                    <input name="dob" id="dob" type="date"  id="dob">
+                </td>
+            </tr>
+            <tr>
+                <td>E-mail: </td>
+                <td><input name="email" id="email" type="text" placeholder="  email"></td>
+            </tr>
+            <tr>
+                <td>Password: </td>
+                <td><input name="password" id="password"  type="password" placeholder="  password"></td>
+            </tr>
+            <tr>
+                <td>Phone no: </td>
+                <td><input name="number" id="number" type="number" placeholder="  phone number"></td>
+            </tr>
+            
+            <tr>
+                <td>&nbsp;</td>
+                <td><input type="submit" class="btn">Register</input></td>
+            </tr>
+        </table>
+    </form>
+</div>
+</center>
+</fieldset>
+  </body>
+</html>

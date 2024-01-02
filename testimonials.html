@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>testimonial page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="topbar">
+      <label for="logo">
+        <img src="imgs/logo.png" width="90" height="90" alt="Green camp logo" />
+      </label>
+      <ul class="sign-in-ups">
+        <li>
+          <a href="register.html" class="btn">Register</a>
+        </li>
+        <li>
+          <a href="signin.html" class="btn">Sign in</a>
+        </li>
+      </ul>
+    </section>
+    <section class="navbar">
+      <button id="burg">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </button>
+      <div class="paths">
+        <ul class="nav-links" id="menu">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="programs.html">Our Programs</a></li>
+          <li><a href="testimonials.html" class="active">Testimonials</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="testimonials">
+      <section class="testimonial" id="testimonial">
+        <div class="content">
+          <div class="heading white">
+            <h2>Testimonial</h2>
+            <p style="color: var(--link-text-color)">Reviews of our clients</p>
+          </div>
+          <div class="testimonials-container">
+            <div class="testimonialbox">
+              <i>⭐⭐⭐⭐⭐</i>
+              <p>
+                I recently had the privilege of enrolling in the Data Science
+                and Machine Learning course, and to say that it exceeded my
+                expectations would be an understatement. Each module flows
+                seamlessly into the next, ensuring a smooth learning curve even
+                for those new to the field. What truly sets this course apart is
+                the passion and expertise of the instructors. Their ability to
+                distill complex topics into easily digestible lessons is nothing
+                short of remarkable. Concepts that once seemed daunting are now
+                approachable and exciting.
+              </p>
+              <h4>Miguel Shrestha</h4>
+              <h4>Data Nepal</h4>
+            </div>
+            <div class="testimonialbox">
+              <i>⭐⭐⭐⭐⭐</i>
+              <p>
+                Probability and statistics play a pivotal role in machine
+                learning by providing the foundational framework for
+                understanding uncertainty, variability, and patterns within
+                data. They enable practitioners to quantify and manage
+                uncertainties in predictions, assess the reliability of models,
+                and make informed decisions based on data-driven insights. From
+                feature engineering to model evaluation, techniques rooted in
+                probability and statistics empower machine learning algorithms
+                to learn from data effectively
+              </p>
+              <h4>Emily Kocontes</h4>
+              <h4>Epidemic Sound</h4>
+            </div>
+            <div class="testimonialbox">
+              <i>⭐⭐⭐⭐⭐</i>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
+                vel aliquid ipsa debitis exercitationem, facere sint.
+              </p>
+              <h4>Carlos Soler</h4>
+              <h4>Alteico de Bilbao</h4>
+            </div>
+            <div class="testimonialbox">
+              <i>⭐⭐⭐⭐⭐</i>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. In,
+                ullam?
+              </p>
+              <h4>Carlos Soler</h4>
+              <h4>Alteico de Bilbao</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="footer">
+      <div class="subsidiary">
+        <h3>Visit our subsidiary links</h3>
+        <ul type="square">
+          <li>
+            <a href="http://www.gogreen.org/why-go-green1">Why go green?</a>
+          </li>
+          <li>
+            <a href="http://www.gogreen.org/green-living1">Green living</a>
+          </li>
+          <li>
+            <a href="http://www.gogreen.org/degrees-education"
+              >Degree and education</a
+            >
+          </li>
+          <li>
+            <a href="www.gogreen.org/research">Research</a>
+          </li>
+          <li>
+            <a href="http://www.gogreen.org/technology">Technology</a>
+          </li>
+        </ul>
+      </div>
+      <div class="articles">
+        <h3>Read our medium articles</h3>
+        <ul type="square">
+          <li>
+            <a
+              href="https://medium.com/towards-data-science/how-id-start-learning-machine-learning-again-3-years-in-55c52aaee52a"
+              >Green camp: best for machine learning</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://medium.com/machine-learning-in-practice/learning-machine-learning-and-nlp-from-185-quora-questions-cebe42e47da8"
+              >Neuro Linguistic Programming</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://medium.com/artificial-corner/4-free-prompt-engineering-courses-to-join-the-top-1-of-chatgpt-users-bceca39f17e4"
+              >Prompt Enineering</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://medium.com/@leoneversberg/i-agree-towards-data-science-is-hard-to-get-accepted-as-a-new-author-87f64b6c443f"
+              >Why data science needs at least PHD</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="social">
+        <h3>Social Connection</h3>
+        <ul type="square">
+          <li>
+            <a href="https://medium.com/@shrestharama65">Medium</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/santoshshrestha4/">Linkedin</a>
+          </li>
+          <li><a href="https://github.com/Rustam-Shrestha">Github</a></li>
+        </ul>
+      </div>
+    </section>
+    <article class="copyright">
+      All rights reserved &copy; RustamShrestha2023
+    </article>
+    <script>
+      let burger = document.querySelector("#burg");
+      burger.addEventListener("click", () => {
+        var element = document.getElementById("menu");
+        element.classList.toggle("clicked");
+      });
+    </script>
+  </body>
+</html>

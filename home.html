@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="topbar">
+      <label for="logo">
+        <img src="imgs/logo.png" width="90" height="90" alt="Green camp logo" />
+      </label>
+      <ul class="sign-in-ups">
+        <li>
+          <a href="register.html" class="btn">Register</a>
+        </li>
+        <li>
+          <a href="signin.html" class="btn">Sign in</a>
+        </li>
+      </ul>
+    </section>
+    <section class="navbar">
+      <button id="burg">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </button>
+      <div class="paths">
+        <ul class="nav-links" id="menu">
+          <li><a href="home.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="programs.html">Our Programs</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+        </ul>
+      </div>
+    </section>
+    <div class="slider">
+      <div class="img-container">
+        <img src="imgs/img1.jpg" alt="images for sliding" />
+        <img src="imgs/img2.jpg" alt="images for sliding" />
+        <img src="imgs/img3.png" alt="images for sliding" />
+        <img src="imgs/img1.jpg" alt="images for sliding" />
+        <img src="imgs/img2.jpg" alt="images for sliding" />
+        <img src="imgs/img3.png" alt="images for sliding" />
+      </div>
+    </div>
+    <section class="main-content">
+      <h1>Want to get started with the best and achieve milestone?</h1>
+      <article>
+        <img src="imgs/class.png" alt="success class" />
+        <p>
+          We offer comprehensive courses on Machine Learning and AI in fraction
+          of cost what univesrsity demands and provide you with valuable skills
+          and certificate of completion and expertise.
+        </p>
+        <p>
+          This is your opportunity to think about your life and we are giving
+          away 90 days free trial. we are leading platform in training and
+          masterclass organizing.
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+          dignissimos, porro aspernatur sequi illum quam voluptatem. Esse
+          reprehenderit numquam adipisci exercitationem voluptates aliquid,
+          provident vero fugit praesentium nisi nobis modi soluta voluptatem,
+          eaque hic, laudantium porro reiciendis? Similique repellat ullam
+          officia cupiditate voluptatem impedit qui necessitatibus eligendi
+          accusantium dolor reiciendis tempora quibusdam eum ea vero, nemo
+          voluptas numquam quis est suscipit aliquid minus magni aut. Nisi
+          cupiditate tempore assumenda a vero repudiandae non voluptatibus illum
+          debitis vel in, voluptas, aliquam iste mollitia aut, sapiente esse
+          sunt recusandae? Atque cumque saepe, odio ipsum veritatis laudantium
+          eius delectus sint explicabo natus.
+        </p>
+      </article>
+    </section>
+    <section class="footer">
+      <div class="subsidiary">
+        <h3>Visit our subsidiary links</h3>
+        <ul type="square">
+          <li>
+            <a href="http://www.gogreen.org/why-go-green1">Why go green?</a>
+          </li>
+          <li>
+            <a href="http://www.gogreen.org/green-living1">Green living</a>
+          </li>
+          <li>
+            <a href="http://www.gogreen.org/degrees-education"
+              >Degree and education</a
+            >
+          </li>
+          <li>
+            <a href="www.gogreen.org/research">Research</a>
+          </li>
+          <li>
+            <a href="http://www.gogreen.org/technology">Technology</a>
+          </li>
+        </ul>
+      </div>
+      <div class="articles">
+        <h3>Read our medium articles</h3>
+        <ul type="square">
+          <li>
+            <a
+              href="https://medium.com/towards-data-science/how-id-start-learning-machine-learning-again-3-years-in-55c52aaee52a"
+              >Green camp: best for machine learning</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://medium.com/machine-learning-in-practice/learning-machine-learning-and-nlp-from-185-quora-questions-cebe42e47da8"
+              >Neuro Linguistic Programming</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://medium.com/artificial-corner/4-free-prompt-engineering-courses-to-join-the-top-1-of-chatgpt-users-bceca39f17e4"
+              >Prompt Enineering</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://medium.com/@leoneversberg/i-agree-towards-data-science-is-hard-to-get-accepted-as-a-new-author-87f64b6c443f"
+              >Why data science needs at least PHD</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="social">
+        <h3>Social Connection</h3>
+        <ul type="square">
+          <li>
+            <a href="https://medium.com/@shrestharama65">Medium</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/santoshshrestha4/">Linkedin</a>
+          </li>
+          <li><a href="https://github.com/Rustam-Shrestha">Github</a></li>
+        </ul>
+      </div>
+    </section>
+    <article class="copyright">
+      All rights reserved &copy; RustamShrestha2023
+    </article>
+    <script>
+      //sliding menu in js
+      let menu = document.querySelector("#burg");
+      const elementToDim = document.querySelectorAll("body:not(.nav-links)");
+      menu.addEventListener("click", () => {
+        var element = document.getElementById("menu");
+        element.classList.toggle("clicked");
+        document.elementToDim.classList.toggle("dim");
+      });
+
+      // sliding image in js
+      const imgBox = document.querySelector(".img-container");
+      let index = 0;
+
+      function slide() {
+        index++;
+        if (index > 2) {
+          index = 0;
+        }
+        imgBox.style.transform = `translateX(${-index * 440}px)`;
+      }
+
+      setInterval(slide, 4000);
+    </script>
+  </body>
+</html>
